@@ -1,0 +1,32 @@
+body{
+    background-color: #588B8B;
+    color: #32373B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+form{
+    width: 600px;
+}
+input{
+    display: flex;
+    width: 100%;
+}
+.form__title {
+    color: #f7fff7;
+    
+}
+.form__legend{
+    color: #f7fff7;
+}
+
+label{
+    display: inline;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}

@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Form</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="form__title">First Form</h1>
+      <form method="POST" action="https://dev.cotenfrontend.pl/">
+        <p>
+            <label
+              >First Name:
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Steve"
+              />
+            </label>
+          </p>
+        <p>
+          <label
+            >Last Name:
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Jobs"
+            />
+          </label>
+        </p>
+        <p>
+            <label
+              >Telephone number:
+              <input
+                type="tel"
+                id="telephoneNumber"
+                name="telephoneNumber"
+                placeholder="0123456789"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Favourite number:
+              <input
+                type="number"
+                id="favouriteNumber"
+                name="favouriteNumber"
+                placeholder="please enter a number"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Email address:
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="steve.jobs@apple.com"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Password:
+              <input
+                type="password"
+                id="password"
+                name="password"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >File:
+              <input
+                type="file"
+                id="file"
+                name="file"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Enter age:
+              <input
+                type="range"
+                id="ageRange"
+                name="ageRange"
+                min="18"
+                max="100"
+                step="1"
+              />
+            </label>
+          </p>
+          <p>
+              <label for="band">Select an option: </label>
+                <select id="band">
+                    <option value="flavour-1">Chocolate</option>
+                    <option value="flavour-2">Vanilla</option>
+                    <option value="flavour-3">Strwaberry</option>
+                </select>
+          </p>
+          <p>
+              <label for="textArea">Your story: </label>
+              <textarea id="textArea"></textarea>
+          </p>
+        <!--address fieldset  -->
+        <fieldset class="form__address">
+          <legend class="form__legend">Address</legend>
+          <p>
+            <label
+              >House Number:
+              <input
+                type="text"
+                id="houseNumber"
+                name="houseNumber"
+                placeholder="10"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Street Name:
+              <input
+                type="text"
+                id="streetName"
+                name="streetName"
+                placeholder="Downing Street"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Post Code:
+              <input
+                type="text"
+                id="postCode"
+                name="postCode"
+                placeholder="SW1A"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Country:
+              <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="United Kingdom"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <!--favourite ice cream flavour fieldset  -->
+        <fieldset class="form__iceCreamFlavour">
+            <legend class="form__legend">Favourite ice cream flavour</legend>
+            <p>
+                <label><input name="iceCreamFlavours" type="radio" value="chocolate">Chocolate</label>
+                
+                
+            </p>
+            <p>
+                <label><input name="iceCreamFlavours" type="radio" value="vanilla">Vanilla</label>
+            </p>
+            <p>
+                <label><input name="iceCreamFlavours" type="radio" value="strawberry">Strawberry</label>
+            </p>
+        </fieldset>
+        <!--favourite ice cream flavour fieldset  -->
+        <fieldset class="form__consent">
+            <p>
+                <label><input type="checkbox" name="consent">I agree</label>
+            </p>
+        </fieldset>
+        <p>
+            <input name="submit" type="submit" value="Submit">
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
