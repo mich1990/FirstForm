@@ -25,6 +25,7 @@ input{
 
 label{
     display: inline;
+    min-width: 100px;
     color: orangered;
 }
 textarea{
